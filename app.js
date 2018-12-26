@@ -2,7 +2,7 @@
 let cords = [];
 let xhttp = new XMLHttpRequest();
 
-function success(pos) {
+const success = (pos) => {
   let crd = pos.coords;
   console.log(crd);
   cords.push(pos.coords.latitude);
@@ -10,7 +10,8 @@ function success(pos) {
   }
 
 
-function error(err) {
+const error = (err) => {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 }
+
 navigator.geolocation.getCurrentPosition(success, error);
