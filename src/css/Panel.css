@@ -1,0 +1,14 @@
+.panel{
+	display: grid;
+	grid-template-columns: repeat(3, min-content);
+	grid-template-rows: repeat(6 , min-content);
+	margin: 0 40%;
+	z-index: 2;
+}
+
+.panel-cell{
+	width: 2rem;
+	height: 2rem;
+	border: solid 1px silver;
+	background-color: #0A0E34;
+}

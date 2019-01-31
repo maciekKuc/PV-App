@@ -1,0 +1,7 @@
+.rooftop{
+	display: grid;
+	background-color: #dc5539;
+	height: 200px;
+	width: 500px;
+	z-index: 1;
+}
