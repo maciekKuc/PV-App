@@ -9,6 +9,7 @@ const Description = () => {
 				<li>Choose the power of the instalation(the step is the power of a single pannel).</li>
 				<li>Enter the vaule of your pannels horizontal and vertical angle's.</li>
 				<li>The app takes your location automaticaly so be sure to click enable</li>
+				<li>Enter the size in centimeters (1px = 10cm)</li>
 				<li>Submit your parameters</li>
 			</ul>
 		</div>
