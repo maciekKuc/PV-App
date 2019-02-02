@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Input.css';
+import panelBase from '../data/panelList';
 
 class Input extends React.Component{
 	constructor(props){
@@ -14,6 +15,7 @@ class Input extends React.Component{
 
 
 	}
+
 
 	render(){
 		return (
@@ -51,7 +53,19 @@ class Input extends React.Component{
 						<option>JA Solar</option>
 					</select>
 					<select name="location" id="" className="input input-selection">
-						
+						{this.state.manufacturer === '' ? 
+							(
+								<option disabled>Select a manufacturer first</option>
+							) : (
+								panelBase.forEach((item) => {
+									if(item.manufacturer === this.state.manufacturer){
+										item.list.map((panel) => {
+											return <option>{panel.name} {panel.power}</option>;
+										});
+									}
+								})
+							)
+						}
 					</select>
 
 				</form>
